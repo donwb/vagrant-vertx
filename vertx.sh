@@ -25,6 +25,7 @@ if [ ! -f /usr/local/bin/jruby-1.7.4/bin/jruby ]
 		gunzip jruby-bin-1.7.4.tar.gz
 		tar xvf jruby-bin-1.7.4.tar
 		sudo mv jruby-1.7.4 /usr/local/bin/
+		rm jruby*
 		CONFIG_JRUBY=0
 	else
 		echo "jRuby already installed, skipping"
